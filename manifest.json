@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Wolvesville Vill Win by xQtFT",
+  "version": "1.0",
+  "permissions": ["debugger", "tabs", "scripting"],
+  "host_permissions": ["*://www.wolvesville.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.wolvesville.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Wolvesville Real Clicker"
+  }
+}
